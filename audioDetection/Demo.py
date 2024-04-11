@@ -5,6 +5,9 @@ import matplotlib.pyplot as plt
 from scipy.signal import butter, lfilter
 from scipy.signal import butter, sosfilt, sosfreqz
 import sys
+import scipy
+
+print(scipy.__version__)
 
 def preprocess_audio_with_snr_check(audio_path):
     y, sr = librosa.load(audio_path)
